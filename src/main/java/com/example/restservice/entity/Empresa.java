@@ -2,18 +2,15 @@ package com.example.restservice.entity;
 
 
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
-
 import javax.persistence.*;
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
+
 
 @Entity
 @Table(name = "empresa")
 @Getter @Setter
-public class Empresa implements Serializable {
+public class Empresa {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -42,8 +39,8 @@ public class Empresa implements Serializable {
     @Column(name = "email", length = 75)
     private String email;
 
-    @OneToMany(mappedBy = "empresa")
-    private List<Noticia> noticias = new ArrayList<>();
+    //@OneToMany(mappedBy = "empresa")
+    //private List<Noticia> noticias = new ArrayList<>();
 
     public Empresa() {
     }

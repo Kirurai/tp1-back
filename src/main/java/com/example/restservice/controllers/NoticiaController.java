@@ -17,7 +17,7 @@ public class NoticiaController {
     private NoticiaRepository noticiaRepository;
 
     @GetMapping
-    public List<Noticia> getAllNoticias(){
+    public Iterable<Noticia> getAllNoticias(){
         return this.noticiaRepository.findAll();
     }
 

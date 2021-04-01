@@ -17,7 +17,7 @@ public class EmpresaController {
     private EmpresaRepository empresaRepository;
 
     @GetMapping
-    public List<Empresa> getAllEmpresas(){
+    public Iterable<Empresa> getAllEmpresas(){
         return this.empresaRepository.findAll();
     }
 
@@ -41,7 +41,7 @@ public class EmpresaController {
         existingEmpresa.setEmail(empresa.getEmail());
         existingEmpresa.setLatitud(empresa.getLatitud());
         existingEmpresa.setLongitud(empresa.getLongitud());
-        existingEmpresa.setNoticias(empresa.getNoticias());
+        //existingEmpresa.setNoticias(empresa.getNoticias());
         existingEmpresa.setHorarioDeAtencion(empresa.getHorarioDeAtencion());
         existingEmpresa.setTelefono(empresa.getTelefono());
         return this.empresaRepository.save(existingEmpresa);

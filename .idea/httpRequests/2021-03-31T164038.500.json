@@ -1,0 +1,7 @@
+{
+  "timestamp": "2021-03-31T19:40:38.005+00:00",
+  "status": 500,
+  "error": "Internal Server Error",
+  "message": "",
+  "path": "/main/all"
+}
