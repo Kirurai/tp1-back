@@ -4,6 +4,8 @@ package com.example.restservice.entity;
 import lombok.Getter;
 import lombok.Setter;
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 
 @Entity
@@ -39,8 +41,8 @@ public class Empresa {
     @Column(name = "email", length = 75)
     private String email;
 
-    //@OneToMany(mappedBy = "empresa")
-    //private List<Noticia> noticias = new ArrayList<>();
+    @OneToMany(mappedBy = "empresa")
+    private List<Noticia> noticias = new ArrayList<>();
 
     public Empresa() {
     }

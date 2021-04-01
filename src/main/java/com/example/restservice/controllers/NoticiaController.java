@@ -6,8 +6,11 @@ import com.example.restservice.repository.NoticiaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
+import servicios.ImagenesServicio;
 
-import java.util.List;
+import java.io.IOException;
+
 
 @RestController
 @RequestMapping("/api/noticias")
@@ -53,5 +56,21 @@ public class NoticiaController {
         this.noticiaRepository.delete(existingNoticia);
         return ResponseEntity.ok().build();
     }
+
+    @PostMapping("/uploadImage")
+    public String uploadImage(@RequestParam("imageFile") MultipartFile imageFile) { //imageFile viene de un <input type="file" name="imageFile"/> de un </form>
+        String returnValue = "index"; //acá iria la página a donde retornaría una vez subida la imagen
+        ImagenesServicio imagenesServicio = new ImagenesServicio();
+
+        try {
+            imagenesServicio.saveImage(imageFile);
+        } catch (IOException e) {
+            e.printStackTrace();
+            returnValue = "error";
+        }
+
+        return returnValue;
+    }
+
 }
 

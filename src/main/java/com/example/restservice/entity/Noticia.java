@@ -42,6 +42,7 @@ public class Noticia{
     public Noticia(){
 
     }
+
     public Noticia(String titulo, String resumen, String imagen, String contenidoHTML, char publicada, Date fechaPublicacion, Empresa empresa) {
         this.titulo = titulo;
         this.resumen = resumen;
