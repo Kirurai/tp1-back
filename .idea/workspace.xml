@@ -6,8 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="98c25307-7e03-456c-a662-7ab7be46c599" name="Default Changelist" comment="Endpoint /api/noticias/uploadImage para subir una imagen imageFile de un form">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restservice/controllers/NoticiaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restservice/controllers/NoticiaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restservice/entity/Noticia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restservice/entity/Noticia.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/servicios/ImagenesServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servicios/ImagenesServicio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp1-backEnd.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tp1-backEnd.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/restservice/controllers/NoticiaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/restservice/controllers/NoticiaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/restservice/entity/Noticia.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/restservice/entity/Noticia.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +34,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -41,7 +48,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.45083934" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
@@ -115,6 +122,19 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.RestServiceApplication">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="generated-requests#13" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="13" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -176,7 +196,7 @@
       <workItem from="1617164616664" duration="84000" />
       <workItem from="1617209614199" duration="10327000" />
       <workItem from="1617238597343" duration="5325000" />
-      <workItem from="1617280931031" duration="873000" />
+      <workItem from="1617280931031" duration="6521000" />
     </task>
     <task id="LOCAL-00001" summary="Cambios minimos">
       <created>1617238735462</created>
@@ -192,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617244779754</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Crea el directorio &quot;imagenes&quot; en el servidor si no existe para guardar las imagenes">
+      <created>1617282046649</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1617282046649</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,6 +240,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Cambios minimos" />
     <MESSAGE value="Endpoint /api/noticias/uploadImage para subir una imagen imageFile de un form" />
-    <option name="LAST_COMMIT_MESSAGE" value="Endpoint /api/noticias/uploadImage para subir una imagen imageFile de un form" />
+    <MESSAGE value="Crea el directorio &quot;imagenes&quot; en el servidor si no existe para guardar las imagenes" />
+    <MESSAGE value="Endpoint para agregar imagenes a una noticia http://localhost:8080/api/noticias/1/uploadImage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Endpoint para agregar imagenes a una noticia http://localhost:8080/api/noticias/1/uploadImage" />
   </component>
 </project>

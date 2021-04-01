@@ -4,7 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.io.Serializable;
+//import java.io.Serializable;
 import java.sql.Date;
 
 @Entity
@@ -15,7 +15,7 @@ public class Noticia{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private long id;
 
     @Column(name = "titulo", length = 128)
     private String titulo;

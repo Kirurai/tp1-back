@@ -10,6 +10,7 @@ import org.springframework.web.multipart.MultipartFile;
 import servicios.ImagenesServicio;
 
 import java.io.IOException;
+import java.util.Optional;
 
 
 @RestController
@@ -57,18 +58,20 @@ public class NoticiaController {
         return ResponseEntity.ok().build();
     }
 
-    @PostMapping("/uploadImage")
-    public String uploadImage(@RequestParam("imageFile") MultipartFile imageFile) { //imageFile viene de un <input type="file" name="imageFile"/> de un </form>
-        String returnValue = "index"; //acá iria la página a donde retornaría una vez subida la imagen
+    @PostMapping("/{id}/uploadImage")
+    public String uploadImage(@RequestParam("imageFile") MultipartFile imageFile,@PathVariable ("id") long id) { //imageFile viene de un <input type="file" name="imageFile"/> de un </form>
+        String returnValue; //este es el nombre con el que se guardará la imagen
         ImagenesServicio imagenesServicio = new ImagenesServicio();
-
         try {
-            imagenesServicio.saveImage(imageFile);
+            returnValue=imagenesServicio.saveImage(imageFile);
+            Optional<Noticia> noticia = this.noticiaRepository.findById(id);
+            noticia.get().setImagen(returnValue);
+            noticia.get().setId(id);
+            this.noticiaRepository.save(noticia.get());
         } catch (IOException e) {
             e.printStackTrace();
             returnValue = "error";
         }
-
         return returnValue;
     }
 
