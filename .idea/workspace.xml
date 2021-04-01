@@ -7,10 +7,6 @@
     <list default="true" id="98c25307-7e03-456c-a662-7ab7be46c599" name="Default Changelist" comment="Endpoint /api/noticias/uploadImage para subir una imagen imageFile de un form">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restservice/controllers/NoticiaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restservice/controllers/NoticiaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restservice/entity/Noticia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restservice/entity/Noticia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servicios/ImagenesServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servicios/ImagenesServicio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/restservice/controllers/NoticiaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/restservice/controllers/NoticiaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/restservice/entity/Noticia.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/restservice/entity/Noticia.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +192,7 @@
       <workItem from="1617164616664" duration="84000" />
       <workItem from="1617209614199" duration="10327000" />
       <workItem from="1617238597343" duration="5325000" />
-      <workItem from="1617280931031" duration="6521000" />
+      <workItem from="1617280931031" duration="7662000" />
     </task>
     <task id="LOCAL-00001" summary="Cambios minimos">
       <created>1617238735462</created>
@@ -219,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617282046649</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Endpoint para agregar imagenes a una noticia http://localhost:8080/api/noticias/1/uploadImage">
+      <created>1617291083545</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1617291083545</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

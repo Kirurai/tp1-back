@@ -1,7 +1,9 @@
 package com.example.restservice.controllers;
 
+import com.example.restservice.entity.Empresa;
 import com.example.restservice.entity.Noticia;
 import com.example.restservice.exception.ResourceNotFoundException;
+import com.example.restservice.repository.EmpresaRepository;
 import com.example.restservice.repository.NoticiaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -19,6 +21,9 @@ public class NoticiaController {
 
     @Autowired
     private NoticiaRepository noticiaRepository;
+
+    @Autowired
+    private EmpresaRepository empresaRepository;
 
     @GetMapping
     public Iterable<Noticia> getAllNoticias(){
@@ -69,6 +74,26 @@ public class NoticiaController {
             noticia.get().setId(id);
             this.noticiaRepository.save(noticia.get());
         } catch (IOException e) {
+            e.printStackTrace();
+            returnValue = "error";
+        }
+        return returnValue;
+    }
+
+    @PostMapping("/{id}/setEmpresa/{id_empresa}")
+    public String setEmpresa(@PathVariable ("id") long id,@PathVariable ("id_empresa") long id_empresa) {
+        String returnValue="ok";
+        try {
+            Optional<Empresa> empresa = this.empresaRepository.findById(id_empresa);
+            Optional<Noticia> noticia = this.noticiaRepository.findById(id);
+
+            empresa.get().getNoticias().add(noticia.get());
+            noticia.get().setEmpresa(empresa.get());
+
+            this.empresaRepository.save(empresa.get());
+            this.noticiaRepository.save(noticia.get());
+
+        } catch (Exception e) {
             e.printStackTrace();
             returnValue = "error";
         }
