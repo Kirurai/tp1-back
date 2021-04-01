@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="98c25307-7e03-456c-a662-7ab7be46c599" name="Default Changelist" comment="Endpoint /api/noticias/uploadImage para subir una imagen imageFile de un form" />
+    <list default="true" id="98c25307-7e03-456c-a662-7ab7be46c599" name="Default Changelist" comment="Endpoint /api/noticias/uploadImage para subir una imagen imageFile de un form">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -189,7 +192,7 @@
       <workItem from="1617164616664" duration="84000" />
       <workItem from="1617209614199" duration="10327000" />
       <workItem from="1617238597343" duration="5325000" />
-      <workItem from="1617280931031" duration="7961000" />
+      <workItem from="1617280931031" duration="10231000" />
     </task>
     <task id="LOCAL-00001" summary="Cambios minimos">
       <created>1617238735462</created>
