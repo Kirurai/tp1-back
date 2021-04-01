@@ -2,9 +2,9 @@
 
 Se creo una API utilizando springboot, lombok y jpa. El objetivo de esta api es poder cargar los datos de una empresa y algunas noticias relacionadas referentes al trabajo práctico número 1. El puerto base para usar por defecto es el 8080
 
-##Endpoints
+## Endpoints
 
-###Relacionados a empresa
+### Relacionados a empresa
 
 | Endpoint   | Verbo HTTP | Descripción |
 | ------ | ------ | ------ |
