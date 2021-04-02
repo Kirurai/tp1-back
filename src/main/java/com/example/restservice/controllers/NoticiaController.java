@@ -36,6 +36,14 @@ public class NoticiaController {
                 .orElseThrow( () -> new ResourceNotFoundException("Noticia not found: " + noticiaID));
     }
 
+    @GetMapping("/{texto}")
+    public Iterable<Noticia> getNoticiaById(@PathVariable("texto") String texto){
+        //cualquiera de las dos formas funciona
+        //return this.noticiaRepository.findByTexto(texto);
+        return this.noticiaRepository.findByTituloIsLikeOrResumenIsLike(texto,texto);
+    }
+
+
     @PostMapping
     public Noticia createNoticia(@RequestBody Noticia Noticia){
         return this.noticiaRepository.save(Noticia);
