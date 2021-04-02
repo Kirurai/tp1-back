@@ -15,7 +15,7 @@ Se creo una API utilizando springboot, lombok y jpa. El objetivo de esta api es 
 | /api/empresas/{id} | DELETE | Elimina de la base de datos la empresa asociada al id|
 | /api/noticias | POST | Crea una noticia. Se le puede entregar un body en forma de json con los datos de la noticia (titulo, resumen, contenidoHTML, etc) |
 | /api/noticias | GET | Devuelve un array con los json de todas las noticias existentes en la base de datos|
-| /api/noticias/buscar/{texto}" | GET | Devuelve un array con los json de todas las noticias cuyo Titulo o Resumen contengan "texto"|
+| /api/noticias/buscar/{texto}" | GET | Devuelve un array con los json de todas las noticias cuyo Titulo o Resumen contengan "palabra1" Y "palabra2" Y ... en cualquier orden|
 | /api/noticias/{id} | GET | Devuelve especificamente la noticia asociada al id |
 | /api/noticias/{id} | PUT | Actualiza los datos de una noticia con los datos entregados en el body del request |
 | /api/noticias/{id} | DELETE | Elimina de la base de datos la noticia asociada al id|
