@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="98c25307-7e03-456c-a662-7ab7be46c599" name="Default Changelist" comment="Endpoint /api/noticias/uploadImage para subir una imagen imageFile de un form">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restservice/controllers/NoticiaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restservice/controllers/NoticiaController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restservice/repository/NoticiaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restservice/repository/NoticiaRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/restservice/controllers/NoticiaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/restservice/controllers/NoticiaController.class" afterDir="false" />
@@ -27,6 +26,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1qVIi69MCrRbYouzCSdj0wffUoa" />
   <component name="ProjectViewState">
@@ -240,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617332914050</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Se puede buscar una noticia por titulo y por resumen http://localhost:8080/api/noticias/buscar/texto_a_buscar">
+      <created>1617334325028</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1617334325028</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,7 +278,9 @@
     <MESSAGE value="Crea el directorio &quot;imagenes&quot; en el servidor si no existe para guardar las imagenes" />
     <MESSAGE value="Endpoint para agregar imagenes a una noticia http://localhost:8080/api/noticias/1/uploadImage" />
     <MESSAGE value="Endpoint para agregar empresas a una noticia&#10;http://localhost:8080/api/noticias/1/setEmpresa/1" />
+    <MESSAGE value="Se puede buscar una noticia por titulo y por resumen http://localhost:8080/api/noticias/buscar/sdsd" />
     <MESSAGE value="Se puede buscar una noticia por titulo y por resumen http://localhost:8080/api/noticias?texto=abeja" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se puede buscar una noticia por titulo y por resumen http://localhost:8080/api/noticias?texto=abeja" />
+    <MESSAGE value="Se puede buscar una noticia por titulo y por resumen http://localhost:8080/api/noticias/buscar/texto_a_buscar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se puede buscar una noticia por titulo y por resumen http://localhost:8080/api/noticias/buscar/texto_a_buscar" />
   </component>
 </project>

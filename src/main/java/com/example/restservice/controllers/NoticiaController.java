@@ -37,9 +37,15 @@ public class NoticiaController {
     }
 
     @GetMapping("/buscar/{texto}")
-    public Iterable<Noticia> getNoticiaById(@PathVariable("texto") String texto){
-        return this.noticiaRepository.findByTexto(texto);
-        //return this.noticiaRepository.findByTituloIsLikeOrResumenIsLike(texto,texto);
+    public Iterable<Noticia> getNoticiaById(@PathVariable("texto") String texto) {
+        String regex = ""; //"(?=.*palabra1)(?=.*palabra2)" da true si el texto contiene la palabra1 Y palabra2 en cualquier orden
+        String[] palabras;
+        palabras = texto.split(" ");
+        for (String palabra : palabras) {
+            regex += "(?=.*" + palabra + ")";
+        }
+        //System.out.println(regex); //for debbuging purposes
+        return this.noticiaRepository.findByTexto(regex);
     }
 
 
