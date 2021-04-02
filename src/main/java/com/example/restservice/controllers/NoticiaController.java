@@ -14,7 +14,7 @@ import servicios.ImagenesServicio;
 import java.io.IOException;
 import java.util.Optional;
 
-
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api/noticias")
 public class NoticiaController {
