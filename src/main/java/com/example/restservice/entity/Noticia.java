@@ -26,7 +26,7 @@ public class Noticia{
     @Column(name = "imagen", length = 128)
     private String imagen;
 
-    @Column(name = "contenido_HTML", length = 20480)
+    @Column(name = "contenido_HTML", length = 1024)
     private String contenidoHTML;
 
     @Column(name = "publicada")
